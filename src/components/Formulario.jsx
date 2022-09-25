@@ -35,6 +35,9 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
     //Validacion del Formulario
     if ([nombre, propietario, email, fecha, sintomas].includes("")) {
       setError(true);
+      setTimeout(() => {
+        setError("");
+      }, 2000);
     } else {
       setError(false);
 
